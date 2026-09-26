@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Controle de Pedágios</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f7fb;
+      font-family: Arial, sans-serif;
+      color: #172033;
+    }
+
+    .card {
+      width: min(420px, 90%);
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 26px;
+    }
+
+    p {
+      color: #64748b;
+    }
+
+    .car {
+      font-size: 48px;
+      margin: 25px 0;
+      animation: mover 1.4s infinite alternate ease-in-out;
+    }
+
+    @keyframes mover {
+      from { transform: translateX(-45px); }
+      to   { transform: translateX(45px); }
+    }
+
+    #erro {
+      display: none;
+      margin-top: 20px;
+      color: #b91c1c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>CONTROLE DE PEDÁGIOS</h1>
+  <p>Abrindo o sistema...</p>
+
+  <div class="car">🚗</div>
+
+  <p>Aguarde alguns segundos.</p>
+
+  <div id="erro">
+    Não foi possível localizar o sistema.
+  </div>
+</div>
+
+<script>
+  /*
+   * O endereço definitivo será configurado no próximo passo.
+   * Não coloque senha, usuário ou dados da planilha neste arquivo.
+   */
+</script>
+
+</body>
+</html>
